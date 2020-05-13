@@ -1,0 +1,84 @@
+﻿<EntityList>
+  <Attributes>
+    <EntityName>sf_product2</EntityName>
+    <CamelCase>sf_product2</CamelCase>
+    <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
+    <ClassBinding/>
+  </Attributes>
+  <Name>All Active Products</Name>
+  <Kind>List</Kind>
+  <AutoWideWidth>0</AutoWideWidth>
+  <OrderBy>name</OrderBy>
+  <MultiSelectCommands>Favorite|||Delete|||EmailLink||</MultiSelectCommands>
+  <SerializedBindings>
+    <string>isactive</string>
+    <string>id</string>
+    <string>productcode</string>
+    <string>description</string>
+    <string>family</string>
+    <string>name</string>
+  </SerializedBindings>
+  <MaxColumns>10</MaxColumns>
+  <Fetch version="1.0">
+    <entity name="sf_product2">
+      <filter type="and">
+        <condition attribute="isactive" operator="eq" value="1"/>
+      </filter>
+    </entity>
+  </Fetch>
+  <Search>
+    <attribute schema="family" method="BeginsWith"/>
+    <attribute schema="name" method="BeginsWith"/>
+    <attribute schema="productcode" method="BeginsWith"/>
+  </Search>
+  <SerializedTemplates>
+    <RowTemplate>
+      <DesignWidth>240</DesignWidth>
+      <DesignHeight>40</DesignHeight>
+      <Name>Default</Name>
+      <Width>240</Width>
+      <Height>80</Height>
+      <Buttons>Favorite;Delete;EmailLink</Buttons>
+      <SerializedChildren>
+        <CellTemplate SchemaName="name">
+          <StyleName>primary</StyleName>
+          <Bounds>67,0,169,24</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="img">
+          <IsConstant>true</IsConstant>
+          <StyleName>ProductPhoto</StyleName>
+          <Bounds>1,1,65,77</Bounds>
+          <CellKind>1</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="description">
+          <StyleName>grayDescription</StyleName>
+          <Bounds>67,37,169,41</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>13</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="isactive">
+          <StyleName>gray</StyleName>
+          <Bounds>202,24,34,13</Bounds>
+          <CellKind>3</CellKind>
+          <Anchor>9</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="productcode">
+          <StyleName>gray_num</StyleName>
+          <Bounds>144,24,56,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>9</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="family">
+          <StyleName>gray_bold</StyleName>
+          <Bounds>67,24,71,13</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
+        </CellTemplate>
+      </SerializedChildren>
+    </RowTemplate>
+  </SerializedTemplates>
+  <CustomProperties/>
+</EntityList>
