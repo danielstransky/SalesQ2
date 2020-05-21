@@ -636,5 +636,28 @@
         </Property>
       </Properties>
     </Style>
+    <Style Name="Table" Style="Normal" Type="DetailItem">
+      <Properties>
+        <Property Name="ComboBoxImageAlignment" Type="System.Int32">
+          <Value>4</Value>
+        </Property>
+        <Property Name="LabelAutoHeight" Type="System.Boolean">
+          <Value>False</Value>
+        </Property>
+        <Property Name="LabelHorizontalAlignment" Type="System.Int32">
+          <Value>1</Value>
+        </Property>
+        <Property Name="LabelPosition" Type="System.Int32">
+          <Value>2</Value>
+        </Property>
+      </Properties>
+    </Style>
+    <Style Name="Table Image Content" Style="FormNoteImage" Type="DetailItem">
+      <Properties>
+        <Property Name="ImageQuery" Type="System.String">
+          <Value>sf_contentversion;versiondata;linkedentityid;{id};islatest;1;title;phoyo.jpg</Value>
+        </Property>
+      </Properties>
+    </Style>
   </Styles>
 </GlobalStyles>
