@@ -7,7 +7,7 @@
   <PrimaryCommands>Delete|||Favorite||</PrimaryCommands>
   <SharedVariableNames/>
   <ClassBinding/>
-  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand OnExecuteButton</EnabledWorkflows>
   <SerializedChildrenV2>
     <FormTab xsi:type="DetailTab">
       <Name>Order</Name>
@@ -23,16 +23,6 @@
         <DetailItem SchemaName="effectivedate"/>
         <DetailItem SchemaName="status"/>
         <DetailItem SchemaName="description"/>
-        <DetailItem SchemaName="$Table1" grid="true">
-          <Columns>*;*</Columns>
-          <Rows>Auto;Auto</Rows>
-          <Items>
-            <DetailItem SchemaName="Button1" button="true" buttonLabel="" buttonClickText="">
-              <IsConstant>true</IsConstant>
-              <GridPosition>0;0;1;1</GridPosition>
-            </DetailItem>
-          </Items>
-        </DetailItem>
       </SerializedChildren>
     </FormTab>
     <FormTab xsi:type="AssociatedTab" flexi="0" flexiHeight="10" flexiOrientation="1">
@@ -55,13 +45,30 @@
     <FormTab xsi:type="DetailTab">
       <Name>Address</Name>
       <SerializedChildren>
-        <DetailItem SchemaName="billingstreet"/>
-        <DetailItem SchemaName="billingcity"/>
-        <DetailItem SchemaName="billingstate"/>
-        <DetailItem SchemaName="billingpostalcode"/>
-        <DetailItem SchemaName="billingcountry"/>
-        <DetailItem SchemaName="billinglatitude"/>
-        <DetailItem SchemaName="billinglongitude"/>
+        <DetailItem SchemaName="$Table2" grid="true">
+          <Columns>*;*</Columns>
+          <Rows>Auto;Auto;Auto</Rows>
+          <Items>
+            <DetailItem SchemaName="billingstreet" Style="New Table">
+              <GridPosition>0;0;1;1</GridPosition>
+            </DetailItem>
+            <DetailItem SchemaName="billingcity" Style="New Table">
+              <GridPosition>1;0;1;1</GridPosition>
+            </DetailItem>
+            <DetailItem SchemaName="billingpostalcode" Style="New Table">
+              <GridPosition>0;1;1;1</GridPosition>
+            </DetailItem>
+            <DetailItem SchemaName="billingcountry" Style="New Table">
+              <GridPosition>1;1;1;1</GridPosition>
+            </DetailItem>
+            <DetailItem SchemaName="billinglatitude" Style="New Table">
+              <GridPosition>0;2;1;1</GridPosition>
+            </DetailItem>
+            <DetailItem SchemaName="billinglongitude" Style="New Table">
+              <GridPosition>1;2;1;1</GridPosition>
+            </DetailItem>
+          </Items>
+        </DetailItem>
       </SerializedChildren>
     </FormTab>
     <FormTab xsi:type="DetailTab">

@@ -19,7 +19,7 @@
           <Columns>*;*</Columns>
           <Rows>Auto;Auto;Auto;Auto;Auto;Auto;Auto;Auto;Auto</Rows>
           <Items>
-            <DetailItem SchemaName="image3" image="true" imageActions="0" Style="Table Image Content">
+            <DetailItem SchemaName="image3" image="true" imageActions="68169734" Style="Table Image Content">
               <IsConstant>true</IsConstant>
               <GridPosition>0;0;1;4</GridPosition>
             </DetailItem>
