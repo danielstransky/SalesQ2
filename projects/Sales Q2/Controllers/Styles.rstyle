@@ -655,7 +655,7 @@
     <Style Name="Table Image Content" Style="FormNoteImage" Type="DetailItem">
       <Properties>
         <Property Name="ImageQuery" Type="System.String">
-          <Value>sf_contentversion;versiondata;linkedentityid;{id};islatest;1;title;phoyo.jpg</Value>
+          <Value>sf_contentversion;versiondata;linkedentityid;{id};islatest;1;title;photo.jpg</Value>
         </Property>
       </Properties>
     </Style>
