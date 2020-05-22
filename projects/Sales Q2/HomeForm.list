@@ -1,27 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<EntityListCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+﻿<EntityListCollection>
+  <EntityName/>
   <CamelCase>HomeItem</CamelCase>
-  <VisualStudioProjectId>c0f71827-e4f6-464e-a71d-c36687d5738e</VisualStudioProjectId>
   <WrapperClass>MobileCrm.Controllers.HomeItem</WrapperClass>
+  <VisualStudioProjectId>c0f71827-e4f6-464e-a71d-c36687d5738e</VisualStudioProjectId>
   <ClassBinding>
-    <SerializedClassBinding name="#Title" label="Title" type="String" />
-    <SerializedClassBinding name="#SubTitle" label="SubTitle" type="String" />
-    <SerializedClassBinding name="#Icon" label="Icon" type="Boolean" />
+    <SerializedClassBinding name="#Title" label="Title" type="String"/>
+    <SerializedClassBinding name="#SubTitle" label="SubTitle" type="String"/>
+    <SerializedClassBinding name="#Icon" label="Icon" type="Boolean"/>
   </ClassBinding>
   <SerializedChildren>
     <EntityList>
       <Attributes>
-        <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
-        <ClassBinding />
+        <EntityName/>
+        <CamelCase>HomeItem</CamelCase>
+        <WrapperClass>MobileCrm.Controllers.HomeItem</WrapperClass>
+        <VisualStudioProjectId>c0f71827-e4f6-464e-a71d-c36687d5738e</VisualStudioProjectId>
+        <ClassBinding>
+          <SerializedClassBinding name="#Title" label="Title" type="String"/>
+          <SerializedClassBinding name="#SubTitle" label="SubTitle" type="String"/>
+          <SerializedClassBinding name="#Icon" label="Icon" type="Boolean"/>
+        </ClassBinding>
       </Attributes>
-      <ComponentId>00000000-0000-0000-0000-000000000000</ComponentId>
       <Name>Default</Name>
       <Kind>List</Kind>
-      <IsDefault>false</IsDefault>
       <AutoWideWidth>0</AutoWideWidth>
-      <AutoHeader>0</AutoHeader>
+      <OrderBy/>
+      <SerializedBindings/>
       <MaxColumns>0</MaxColumns>
-      <SerializedBindings />
       <SerializedTemplates>
         <RowTemplate>
           <DesignWidth>240</DesignWidth>
@@ -33,14 +38,12 @@
           <SerializedSelectedBackground>1008636159</SerializedSelectedBackground>
           <SerializedChildren>
             <CellTemplate SchemaName="#Icon">
-              <IsConstant>false</IsConstant>
               <StyleName>Image Cell Style Blue SF</StyleName>
               <Bounds>6,2,44,44</Bounds>
               <CellKind>1</CellKind>
               <Anchor>5</Anchor>
             </CellTemplate>
             <CellTemplate SchemaName="#Title">
-              <IsConstant>false</IsConstant>
               <StyleName>Primary SF blue</StyleName>
               <Bounds>60,11,174,23</Bounds>
               <CellKind>0</CellKind>
@@ -49,10 +52,7 @@
           </SerializedChildren>
         </RowTemplate>
       </SerializedTemplates>
-      <CustomProperties />
-      <SerializedChildren />
-      <Height>48</Height>
-      <IFrameProvidesDS>false</IFrameProvidesDS>
+      <CustomProperties/>
     </EntityList>
   </SerializedChildren>
 </EntityListCollection>

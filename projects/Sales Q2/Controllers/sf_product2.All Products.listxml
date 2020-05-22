@@ -41,7 +41,7 @@
         </CellTemplate>
         <CellTemplate SchemaName="name">
           <StyleName>primary</StyleName>
-          <Bounds>66,1,169,24</Bounds>
+          <Bounds>66,1,168,24</Bounds>
           <CellKind>0</CellKind>
           <Anchor>13</Anchor>
         </CellTemplate>
@@ -54,15 +54,21 @@
         </CellTemplate>
         <CellTemplate SchemaName="description">
           <StyleName>gray</StyleName>
-          <Bounds>68,27,167,51</Bounds>
+          <Bounds>68,44,167,34</Bounds>
           <CellKind>0</CellKind>
           <Anchor>13</Anchor>
         </CellTemplate>
         <CellTemplate SchemaName="isactive">
           <StyleName>gray</StyleName>
-          <Bounds>188,6,44,13</Bounds>
+          <Bounds>182,26,50,16</Bounds>
           <CellKind>3</CellKind>
           <Anchor>8</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="family">
+          <StyleName>gray_bold</StyleName>
+          <Bounds>68,26,112,17</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>5</Anchor>
         </CellTemplate>
       </SerializedChildren>
     </RowTemplate>
