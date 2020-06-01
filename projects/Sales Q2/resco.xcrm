@@ -68,6 +68,62 @@
         </index>
       </indexes>
     </entity>
+    <entity schema="resco_devicecontrol">
+      <properties>
+        <property schema="createdby"/>
+        <property schema="createdon"/>
+        <property schema="modifiedby"/>
+        <property schema="modifiedon"/>
+        <property schema="ownerid"/>
+        <property schema="owningbusinessunit"/>
+        <property schema="resco_devicecontrolid"/>
+        <property schema="resco_deviceid"/>
+        <property schema="resco_entityname"/>
+        <property schema="resco_mobiledeviceid"/>
+        <property schema="resco_recordid"/>
+        <property schema="resco_requestdata"/>
+        <property schema="resco_requesttype"/>
+        <property schema="resco_responsecode"/>
+        <property schema="resco_responsedata"/>
+        <property schema="resco_responsedatalength"/>
+        <property schema="resco_responsestatus"/>
+        <property schema="statecode"/>
+        <property schema="statuscode"/>
+        <property schema="versionnumber"/>
+      </properties>
+      <indexes>
+        <index schema="idx_resco_devicecontrol_createdby" issystem="true">
+          <fields>
+            <field schema="createdby"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_devicecontrol_modifiedby" issystem="true">
+          <fields>
+            <field schema="modifiedby"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_devicecontrol_ownerid" issystem="true">
+          <fields>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_devicecontrol_owningbusinessunit" issystem="true">
+          <fields>
+            <field schema="owningbusinessunit"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_devicecontrol_resco_mobiledeviceid" issystem="true">
+          <fields>
+            <field schema="resco_mobiledeviceid"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_devicecontrol_resco_deviceid" issystem="true">
+          <fields>
+            <field schema="resco_deviceid"/>
+          </fields>
+        </index>
+      </indexes>
+    </entity>
     <entity schema="resco_favorite">
       <properties>
         <property schema="createdby"/>
@@ -134,6 +190,33 @@
         <property schema="statuscode"/>
         <property schema="versionnumber"/>
       </properties>
+      <indexes>
+        <index schema="idx_resco_mobileaudit_createdby" issystem="true">
+          <fields>
+            <field schema="createdby"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_mobileaudit_modifiedby" issystem="true">
+          <fields>
+            <field schema="modifiedby"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_mobileaudit_ownerid" issystem="true">
+          <fields>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_mobileaudit_owningbusinessunit" issystem="true">
+          <fields>
+            <field schema="owningbusinessunit"/>
+          </fields>
+        </index>
+        <index schema="idx_resco_mobileaudit_resco_entityname" issystem="true">
+          <fields>
+            <field schema="resco_entityname"/>
+          </fields>
+        </index>
+      </indexes>
     </entity>
     <entity schema="resco_mobilereport">
       <properties>
