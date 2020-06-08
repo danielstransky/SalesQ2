@@ -7,15 +7,12 @@
   <ClassBinding/>
   <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
   <SerializedChildrenV2>
-    <FormTab xsi:type="SignatureTab" flexi="0">
-      <Name>Photo</Name>
-      <NoteSubject>photo.jpg</NoteSubject>
-      <EntityName>sf_contentversion</EntityName>
-      <Commands>68161548</Commands>
-    </FormTab>
     <FormTab xsi:type="DetailTab">
       <Name>sf_product</Name>
       <SerializedChildren>
+        <DetailItem SchemaName="image1" image="true" imageActions="0" Style="Table Image Content">
+          <IsConstant>true</IsConstant>
+        </DetailItem>
         <DetailItem SchemaName="name"/>
         <DetailItem SchemaName="productcode"/>
         <DetailItem SchemaName="isactive"/>

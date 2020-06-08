@@ -618,7 +618,7 @@
     <Style Name="ListFileImage" Style="ListNoteImage" Type="ImageCell">
       <Properties>
         <Property Name="ImageQuery" Type="System.String">
-          <Value>sf_contentversion;versiondata;linkedentityid;{id};islatest;1;title;photo.jpg|Controls.noPhoto</Value>
+          <Value>sf_contentversion;versiondata;linkedentityid;{id};islatest;1|Controls.noPhoto</Value>
         </Property>
       </Properties>
     </Style>
@@ -655,7 +655,7 @@
     <Style Name="Table Image Content" Style="FormNoteImage" Type="DetailItem">
       <Properties>
         <Property Name="ImageQuery" Type="System.String">
-          <Value>sf_contentversion;versiondata;linkedentityid;{id};islatest;1;title;photo.jpg</Value>
+          <Value>sf_contentversion;versiondata;linkedentityid;{id};islatest;1</Value>
         </Property>
       </Properties>
     </Style>

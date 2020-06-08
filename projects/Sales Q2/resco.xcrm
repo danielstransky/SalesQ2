@@ -335,7 +335,7 @@
         </index>
       </indexes>
     </entity>
-    <entity schema="sf_contact" conflict="32768" xattr="32768">
+    <entity schema="sf_contact" conflict="32768" xattr="67141632">
       <properties>
         <property schema="accountid"/>
         <property schema="createdbyid"/>
@@ -1153,7 +1153,7 @@
         </index>
       </indexes>
     </entity>
-    <entity schema="sf_product2" conflict="32768" xattr="32768">
+    <entity schema="sf_product2" conflict="32768" xattr="67141632">
       <properties>
         <property schema="createdon"/>
         <property schema="description"/>
