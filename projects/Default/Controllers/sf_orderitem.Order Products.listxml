@@ -41,7 +41,7 @@
         <CellTemplate SchemaName="unitprice">
           <StyleName>r_gray</StyleName>
           <Bounds>58,39,46,16</Bounds>
-          <CellKind>3</CellKind>
+          <CellKind>0</CellKind>
           <Anchor>6</Anchor>
         </CellTemplate>
         <CellTemplate SchemaName="totalprice">
