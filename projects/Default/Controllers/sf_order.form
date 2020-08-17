@@ -29,7 +29,7 @@
       <Name>Order Products List</Name>
       <Binding SchemaName="sf_orderitem.orderid"/>
       <Views>sf_orderitem.*:sf_orderitem.@Order Products</Views>
-      <LookupViews>sf_pricebookentry.Active:sf_pricebookentry.Active - Grid:sf_pricebookentry.All:sf_pricebookentry.Inactive:sf_pricebookentry.@Products Icons</LookupViews>
+      <LookupViews>sf_pricebookentry.Active:sf_pricebookentry.Active - Grid:sf_pricebookentry.All:sf_pricebookentry.Inactive:sf_pricebookentry.Products Icons:sf_pricebookentry.Products Icons 10:sf_pricebookentry.@Products Icons 2:sf_pricebookentry.Products Icons 3:sf_pricebookentry.Products Icons 4:sf_pricebookentry.Products Icons 5:sf_pricebookentry.Products Icons 6:sf_pricebookentry.Products Icons 7:sf_pricebookentry.Products Icons 8:sf_pricebookentry.Products Icons 9:sf_pricebookentry.Products Icons 9 - Copy</LookupViews>
     </FormTab>
     <FormTab xsi:type="DetailTab" flexi="1" NameModified="0" EntityIconName="" IsIconNameReadOnly="0">
       <Name>Authorization</Name>

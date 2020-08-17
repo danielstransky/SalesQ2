@@ -5,7 +5,7 @@
     <VisualStudioProjectId>00000000-0000-0000-0000-000000000000</VisualStudioProjectId>
     <ClassBinding/>
   </Attributes>
-  <Name>Products Icons</Name>
+  <Name>Products Icons 9 - Copy</Name>
   <Kind>List</Kind>
   <AutoWideWidth>10</AutoWideWidth>
   <OrderBy>name</OrderBy>
@@ -30,25 +30,32 @@
       <DesignHeight>40</DesignHeight>
       <Name>Default</Name>
       <Width>150</Width>
-      <Height>180</Height>
+      <Height>90</Height>
       <Buttons>none</Buttons>
+      <SerializedSelectedBackground>-1447447</SerializedSelectedBackground>
       <SerializedChildren>
+        <CellTemplate SchemaName="unitprice">
+          <StyleName>large14</StyleName>
+          <Bounds>86,44,64,23</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>9</Anchor>
+        </CellTemplate>
+        <CellTemplate SchemaName="name">
+          <StyleName>Inspections</StyleName>
+          <Bounds>3,69,147,20</Bounds>
+          <CellKind>0</CellKind>
+          <Anchor>7</Anchor>
+        </CellTemplate>
         <CellTemplate SchemaName="img">
           <IsConstant>true</IsConstant>
           <StyleName>PricebookEntryFileImage</StyleName>
-          <Bounds>3,4,145,115</Bounds>
+          <Bounds>3,2,83,66</Bounds>
           <CellKind>1</CellKind>
-          <Anchor>15</Anchor>
+          <Anchor>5</Anchor>
         </CellTemplate>
-        <CellTemplate SchemaName="unitprice">
-          <StyleName>Inspections</StyleName>
-          <Bounds>3,153,141,20</Bounds>
-          <CellKind>0</CellKind>
-          <Anchor>15</Anchor>
-        </CellTemplate>
-        <CellTemplate SchemaName="name">
-          <StyleName>0102 h1</StyleName>
-          <Bounds>2,128,142,20</Bounds>
+        <CellTemplate SchemaName="productcode">
+          <StyleName>gray</StyleName>
+          <Bounds>86,15,62,14</Bounds>
           <CellKind>0</CellKind>
           <Anchor>5</Anchor>
         </CellTemplate>

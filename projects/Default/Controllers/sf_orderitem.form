@@ -6,10 +6,10 @@
   <ClassBinding/>
   <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
   <SerializedChildrenV2>
-    <FormTab xsi:type="DetailTab" NameModified="0" EntityIconName="" IsIconNameReadOnly="0">
+    <FormTab xsi:type="DetailTab">
       <Name>sf_orderitem</Name>
       <SerializedChildren>
-        <DetailItem SchemaName="image" image="true" imageActions="0" Style="FormPricebookEntryFileImage">
+        <DetailItem SchemaName="image" image="true" Style="FormPricebookEntryFileImage">
           <IsConstant>true</IsConstant>
         </DetailItem>
         <DetailItem SchemaName="orderid"/>
