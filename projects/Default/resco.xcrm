@@ -238,7 +238,7 @@
         </index>
       </indexes>
     </entity>
-    <entity schema="sf_account" conflict="32768" xattr="32768">
+    <entity schema="sf_account" conflict="32768" xattr="268468224">
       <properties>
         <property schema="billingcity"/>
         <property schema="billingcountry"/>

@@ -14,6 +14,7 @@
   <SharedVariables>&lt;SharedVariables&gt;&lt;Variables&gt;&lt;/Variables&gt;&lt;/SharedVariables&gt;</SharedVariables>
   <SerializedBindings>
     <string>id</string>
+    <string>listprice</string>
     <string>pricebookentryid</string>
     <string>quantity</string>
     <string>totalprice</string>
@@ -21,8 +22,9 @@
     <string>pricebookentryid.sf_pricebookentry.productcode</string>
   </SerializedBindings>
   <MaxColumns>0</MaxColumns>
+  <ListOnChangeRule>&lt;?xml version="1.0" ?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="11" version="0"&gt;&lt;branch e="true" info="" &gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.quantity&lt;/var&gt;&lt;op&gt;LessEqual&lt;/op&gt;&lt;arg&gt;Float:0&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.quantity&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Float:1&lt;/arg&gt;&lt;/function&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.unitprice&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;var:Entity.listprice&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</ListOnChangeRule>
   <ListCellRule>&lt;?xml version="1.0" ?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="11" version="0"&gt;&lt;branch e="true" info="" &gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;ChangedItem&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;String:Plus&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.quantity&lt;/var&gt;&lt;func&gt;Addition&lt;/func&gt;&lt;arg&gt;Float:1&lt;/arg&gt;&lt;arg&gt;var:Entity.quantity&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;branch e="true" info="" &gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;ChangedItem&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;String:Minus&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;branch e="true" info="" &gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;condition e="false"&gt;&lt;var&gt;Entity.quantity&lt;/var&gt;&lt;op&gt;Equal&lt;/op&gt;&lt;arg&gt;Float:1&lt;/arg&gt;&lt;/condition&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.quantity&lt;/var&gt;&lt;func&gt;Assign&lt;/func&gt;&lt;arg&gt;Float:1&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;if e="true"&gt;&lt;conditions e="true" op="And"&gt;&lt;/conditions&gt;&lt;action&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.quantity&lt;/var&gt;&lt;func&gt;Addition&lt;/func&gt;&lt;arg&gt;Float:-1&lt;/arg&gt;&lt;arg&gt;var:Entity.quantity&lt;/arg&gt;&lt;/function&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/action&gt;&lt;/if&gt;&lt;/branch&gt;&lt;/Workflow&gt;</ListCellRule>
-  <TemplateSelectorRule>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="7" version="0"&gt;&lt;definition e="false"&gt;&lt;var&gt;TotalAmount&lt;/var&gt;&lt;arg&gt;var:Entity.quantity&lt;/arg&gt;&lt;arg&gt;var:Entity.unitprice&lt;/arg&gt;&lt;func&gt;Multiplication&lt;/func&gt;&lt;type&gt;Decimal&lt;/type&gt;&lt;/definition&gt;&lt;/Workflow&gt;</TemplateSelectorRule>
+  <TemplateSelectorRule>&lt;?xml version="1.0" ?&gt;&lt;Workflow e="true" isvalid="true" syntaxVersion="11" version="0"&gt;&lt;function e="false"&gt;&lt;var&gt;Entity.totalprice&lt;/var&gt;&lt;func&gt;Multiplication&lt;/func&gt;&lt;arg&gt;var:Entity.quantity&lt;/arg&gt;&lt;arg&gt;var:Entity.unitprice&lt;/arg&gt;&lt;/function&gt;&lt;/Workflow&gt;</TemplateSelectorRule>
   <SerializedTemplates>
     <RowTemplate>
       <DesignWidth>240</DesignWidth>
@@ -34,7 +36,7 @@
       <SerializedChildren>
         <CellTemplate SchemaName="quantity">
           <StyleName>r_gray</StyleName>
-          <Bounds>180,39,21,16</Bounds>
+          <Bounds>142,39,21,16</Bounds>
           <CellKind>3</CellKind>
           <Anchor>6</Anchor>
         </CellTemplate>
@@ -67,7 +69,7 @@
         <CellTemplate SchemaName="QTY:">
           <IsConstant>true</IsConstant>
           <StyleName>r_gray_bold</StyleName>
-          <Bounds>178,23,24,16</Bounds>
+          <Bounds>141,23,24,16</Bounds>
           <CellKind>0</CellKind>
           <Anchor>6</Anchor>
         </CellTemplate>
@@ -81,14 +83,14 @@
         <CellTemplate SchemaName="Minus">
           <IsConstant>true</IsConstant>
           <StyleName>Minus</StyleName>
-          <Bounds>147,23,30,32</Bounds>
+          <Bounds>109,23,30,32</Bounds>
           <CellKind>7</CellKind>
           <Anchor>6</Anchor>
         </CellTemplate>
         <CellTemplate SchemaName="Plus">
           <IsConstant>true</IsConstant>
           <StyleName>Plus</StyleName>
-          <Bounds>203,23,30,32</Bounds>
+          <Bounds>166,23,30,32</Bounds>
           <CellKind>7</CellKind>
           <Anchor>6</Anchor>
         </CellTemplate>
@@ -101,7 +103,5 @@
       </SerializedChildren>
     </RowTemplate>
   </SerializedTemplates>
-  <CustomProperties>
-    <SerializedClassBinding name="TotalAmount" label="TotalAmount" type="Decimal"/>
-  </CustomProperties>
+  <CustomProperties/>
 </EntityList>
